@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "Carta.h"
 void RetornaPosicao(Carta *carta){
     strcpy(carta->posicao[1],"para cima");
     strcpy(carta->posicao[2],"para baixo");
