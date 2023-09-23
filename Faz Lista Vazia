@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Carta.h"
+#include "Carta.c"
+#include "Lista_Carta.h"
+void FListaVazia(TLista *pLista){
+    pLista->pPrimeiro = (Apontador) malloc(sizeof(TCelula));
+    pLista->pUltimo = pLista->pPrimeiro;
+    pLista->pPrimeiro->pProx = NULL;
+}
