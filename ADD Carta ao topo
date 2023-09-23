@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Carta.h"
+void AdicionarCartaNoTopo(TLista *pLista, Carta *Carta){
+//Adiciona carta ao topo da lista;
+//Considere o topo como o fim da lista;
+    pLista->pUltimo->pProx = (Apontador) malloc(sizeof(TCelula));
+    pLista->pUltimo = pLista->pUltimo->pProx;
+    pLista->pUltimo->carta = *Carta;
+    pLista->pUltimo->pProx = NULL;
+}
