@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Carta.h"
+int VerificaListaVazia(TLista* pLista){
+//Retorna TRUE caso a lista esteja vazia, e FALSE,caso o contrário;
+    return (pLista->pPrimeiro == pLista->pUltimo);
+}
